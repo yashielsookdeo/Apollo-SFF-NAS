@@ -1,0 +1,15 @@
+services:
+  sonarr:
+    image: lscr.io/linuxserver/sonarr:latest
+    container_name: sonarr
+    environment:
+      - PUID=0
+      - PGID=0
+      - TZ=Africa/Johannesburg
+    volumes:
+      - /portainer/Files/AppData/Config/sonarr/data:/config
+      - /mnt/transporter/media:/media
+      - /mnt/transporter/downloads:/downloads
+    ports:
+      - 8989:8989
+    restart: unless-stopped

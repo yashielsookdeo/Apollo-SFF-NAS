@@ -1,0 +1,23 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# macOS system files
+.AppleDouble
+.LSOverride
+
+# Windows system files
+desktop.ini
+$RECYCLE.BIN/
+
+# Temporary files
+*.tmp
+*.swp
+*.swo
+*.bak
+
+# Logs
+*.log
+
+# Byebug history
+.byebug_history
